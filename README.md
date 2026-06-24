@@ -1,2 +1,19 @@
-# FileManager
-Simple File Manager, based on С++, can work on Windows XP or above, just maked for 2 days.
+## File Manager v1.0
+
+### Возможности:
+- Навигация по папкам (вперёд/назад/вверх)
+- Отображение файлов и папок
+- Копирование/вставка файлов (Ctrl+C / Ctrl+V)
+- Удаление в корзину (Delete) и безвозвратное (Shift+Delete), возможность удалить файл через контекстное меню (ПКМ → Delete)
+- Извлечение USB-флешек и CD/DVD (кнопка ▲ или через ПКМ → Eject)
+- Показ скрытых файлов (галочка в контекстном меню)
+- Работает на Windows XP, 7, 8, 8.1, 10, 11
+
+### Сборка:
+- Компилятор: MinGW (g++)
+- Команда: g++ -std=c++11 -mwindows -static -o FileManager.exe explorer.cpp -lcomctl32 -lshell32 -lgdi32 -luser32 -lole32 -loleaut32
+
+### Благодарности
+- Этот проект создан при поддержке Вайбкода. 
+- Огромное спасибо DeepSeek за помощь в разработке и отладке!
+- DeepSeek - не hueta.
